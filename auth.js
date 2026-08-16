@@ -11,14 +11,17 @@
 
 /* ---------- account storage ---------- */
 function getUsers(){
-  return readJSON(STORAGE_KEYS.USERS, []);
+  // Filter out any legacy/corrupted entries that are missing the
+  // fields this app relies on, so a bad record can't crash lookups.
+  return readArray(STORAGE_KEYS.USERS).filter(u => u && typeof u.username === 'string');
 }
 function saveUsers(users){
   return writeJSON(STORAGE_KEYS.USERS, users);
 }
 function findUserByUsername(username){
+  if(!username) return null;
   const uname = username.trim().toLowerCase();
-  return getUsers().find(u => u.username.toLowerCase() === uname);
+  return getUsers().find(u => u.username.toLowerCase() === uname) || null;
 }
 
 function getCurrentUsername(){
@@ -36,11 +39,17 @@ function clearCurrentUsername(){
   localStorage.removeItem(STORAGE_KEYS.CURRENT_USER);
 }
 
-/* Redirect guard for pages that require a logged-in user */
+/* Redirect guard for pages that require a logged-in user.
+   Returns true if the visitor is authenticated. Returns false and
+   kicks off a redirect otherwise — callers must check the return
+   value before touching currentUser-dependent state, since the
+   redirect does not stop the rest of the script from running. */
 function requireAuth(){
   if(!getCurrentUsername() || !getCurrentUser()){
     window.location.href = 'index.html';
+    return false;
   }
+  return true;
 }
 /* Redirect guard for auth pages: bounce logged-in users straight in */
 function redirectIfAuthed(){
