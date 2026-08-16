@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign in · TaskNext</title>
+<title>Create account · TaskNext</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="auth-page">
@@ -19,25 +19,37 @@
     </div>
 
     <div class="auth-form-wrap">
-      <span class="auth-eyebrow">Welcome back</span>
-      <h1>Sign in to your workspace</h1>
-      <p class="auth-sub">Enter your details to pick up where you left off.</p>
+      <span class="auth-eyebrow">Get started</span>
+      <h1>Create your account</h1>
+      <p class="auth-sub">Takes less than a minute. No email required for this demo.</p>
 
-      <form id="login-form" novalidate>
+      <form id="register-form" novalidate>
         <div class="field">
-          <label for="login-username">Username</label>
-          <input type="text" id="login-username" name="username" placeholder="e.g. jordan.lee" autocomplete="username">
+          <label for="reg-fullname">Full name</label>
+          <input type="text" id="reg-fullname" name="fullName" placeholder="Jordan Lee" autocomplete="name">
           <span class="field-error"></span>
         </div>
         <div class="field">
-          <label for="login-password">Password</label>
-          <input type="password" id="login-password" name="password" placeholder="Your password" autocomplete="current-password">
+          <label for="reg-username">Username</label>
+          <input type="text" id="reg-username" name="username" placeholder="e.g. jordan.lee" autocomplete="username">
           <span class="field-error"></span>
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        <div class="field-row">
+          <div class="field">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" name="password" placeholder="At least 6 characters" autocomplete="new-password">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="reg-confirm">Confirm password</label>
+            <input type="password" id="reg-confirm" name="confirmPassword" placeholder="Repeat password" autocomplete="new-password">
+            <span class="field-error"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create account</button>
       </form>
 
-      <p class="auth-switch">Don't have an account? <a href="register.html">Create one</a></p>
+      <p class="auth-switch">Already have an account? <a href="index.html">Sign in</a></p>
     </div>
   </section>
 
@@ -49,22 +61,22 @@
         </span>
         Task<span class="wordmark__next">Next</span>
       </span>
-      <h2 class="auth-tagline">Plan your work.<br>Finish <span>what matters.</span></h2>
+      <h2 class="auth-tagline">Every account keeps<br>its <span>own private list.</span></h2>
 
       <div class="auth-side__mock">
         <div class="auth-side__mock-row">
-          <span class="mock-check done"></span>
-          <span class="mock-row-done">Draft Q3 roadmap outline</span>
-          <span class="mock-badge med">MEDIUM</span>
-        </div>
-        <div class="auth-side__mock-row">
           <span class="mock-check"></span>
-          <span>Review pull request #142</span>
+          <span>Set up onboarding checklist</span>
           <span class="mock-badge high">HIGH</span>
         </div>
         <div class="auth-side__mock-row">
           <span class="mock-check"></span>
-          <span>Book travel for client visit</span>
+          <span>Sync design tokens with team</span>
+          <span class="mock-badge med">MEDIUM</span>
+        </div>
+        <div class="auth-side__mock-row">
+          <span class="mock-check done"></span>
+          <span class="mock-row-done">Write project brief</span>
           <span class="mock-badge low">LOW</span>
         </div>
       </div>
