@@ -31,6 +31,14 @@ function writeJSON(key, value){
   }
 }
 
+/* Read a key that is expected to hold an array. Guards against
+   corrupted/legacy localStorage data that isn't actually an array
+   (e.g. an object, a string, or valid JSON of the wrong shape). */
+function readArray(key){
+  const value = readJSON(key, []);
+  return Array.isArray(value) ? value : [];
+}
+
 /* ---------- misc helpers ---------- */
 function uid(){
   return 't_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 8);
