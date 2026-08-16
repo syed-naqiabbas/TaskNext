@@ -3,8 +3,12 @@
    Plan your work. Finish what matters.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500&display=swap');
-
+/* Font stack intentionally uses no external @import. A remote
+   webfont request is a real failure point — it 403s/hangs in any
+   offline, sandboxed, or restrictive-network environment (exactly
+   the kind this app gets demoed in) and shows up as a console
+   error every time. The native UI stack below renders essentially
+   identically to Inter on every platform without that risk. */
 :root{
   /* --- Color tokens --- */
   --bg:            #FAFAF8;
@@ -33,8 +37,8 @@
   --p-low-soft:    #E7EDF6;
 
   /* --- Type --- */
-  --font-ui:   'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  --font-ui:   -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
 
   /* --- Elevation --- */
   --shadow-sm: 0 1px 2px rgba(28,29,31,0.04), 0 1px 1px rgba(28,29,31,0.03);
@@ -659,6 +663,7 @@ input,textarea,select{ font-family:inherit; font-size:inherit; color:inherit; }
   font-size:11px; font-weight:700; letter-spacing:.02em;
   padding:2.5px 8px; border-radius:5px;
   font-family: var(--font-mono);
+  text-transform: capitalize;
 }
 .badge.high{ background: var(--p-high-soft); color: var(--p-high); }
 .badge.medium{ background: var(--p-medium-soft); color: var(--p-medium); }
