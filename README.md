@@ -1,426 +1,189 @@
-📚 StudyTrack
+<div align="center">
 
-🎓 Student Task Manager
+# 📚 StudyTrack
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/LocalStorage-Browser-blue?style=for-the-badge" alt="LocalStorage">
-</p><p align="center">
-  <b>Plan smarter • Track better • Stay ahead 🚀</b>
-</p>---
+### The all-in-one student productivity & study management platform
 
-✨ About The Project
+Plan tasks, track homework, prep for exams, manage projects, and study smarter — all from one clean dashboard.
 
-StudyTrack is a browser-based student productivity application designed to make academic task management simple, organized, and visual.
+[![Made with HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
+[![Made with CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
+[![Made with JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
+[![No Frameworks](https://img.shields.io/badge/Frameworks-None-4F46E5?style=for-the-badge)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](#-license)
 
-It brings assignments, deadlines, priorities, progress, search, filters, and user accounts together inside one dashboard.
+<br>
 
-The project is built from the ground up using:
+<img src="https://img.shields.io/badge/status-active-success?style=flat-square" alt="status">
+<img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" alt="version">
+<img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs welcome">
 
-- 🧱 HTML5
-- 🎨 CSS3
-- ⚡ Vanilla JavaScript
-- 💾 Browser "localStorage"
-
-«🎯 Project Type: Web Development Midterm Project
-🧩 Architecture: Frontend-only
-💾 Data Layer: Browser localStorage
-📱 Responsive: Yes»
+</div>
 
 ---
 
-🎯 Why StudyTrack?
+## ✨ Overview
 
-Students often have assignments spread across notebooks, chats, notes, and different subjects.
+**StudyTrack** is a fully functional, front-end-only student productivity platform built with nothing but **vanilla HTML, CSS, and JavaScript** — no frameworks, no build tools, no backend. It's designed to feel like a real SaaS product: polished UI, smooth micro-interactions, and every button actually does something.
 
-StudyTrack provides one organized workspace to:
+Open the dashboard and instantly answer:
 
-📌 Create and manage academic tasks
-⏰ Track upcoming and overdue deadlines
-🎯 Set task priorities
-📊 Monitor completion progress
-🔎 Search and filter tasks instantly
-👤 Maintain separate task data for different users
+> *What do I have to do today? What's due soon? What should I study? Which exams are coming? How much progress have I made?*
 
 ---
 
-🚀 Feature Showcase
+## 🖼️ Preview
 
-🔐 Authentication
+<div align="center">
+<img src="https://img.shields.io/badge/🏠_Dashboard-Stat_cards_%7C_Today's_tasks_%7C_Productivity_ring-4F46E5?style=for-the-badge" alt="dashboard">
+<br><br>
+<img src="https://img.shields.io/badge/📅_Schedule-Week_%7C_Day_%7C_Month_views-DA7B11?style=for-the-badge" alt="schedule">
+<br><br>
+<img src="https://img.shields.io/badge/🎯_Exams-Countdown_%7C_Prep_checklist-D6395A?style=for-the-badge" alt="exams">
+</div>
 
-Feature| Status
-👤 User Registration| ✅
-🔑 Username & Password Login| ✅
-👁️ Password Visibility Toggle| ✅
-💾 Remember Me| ✅
-🚪 Logout & Sessions| ✅
-🚫 Duplicate Username Prevention| ✅
-🛡️ Protected Dashboard| ✅
-
----
-
-📊 Smart Dashboard
-
-- 📈 Live task statistics
-- ✅ Pending vs completed tracking
-- ⏰ Due-soon counter
-- 📊 Dynamic progress bar
-- 📝 Recent task preview
-- 👋 Personalized greeting
+> Add real screenshots or a GIF walkthrough here once deployed — drop them in a `/screenshots` folder and reference them, e.g. `![Dashboard](screenshots/dashboard.png)`
 
 ---
 
-✅ Task Management
+## 🚀 Features
 
-- ➕ Add tasks
-- ✏️ Edit tasks
-- 🗑️ Delete tasks
-- 🔄 Complete / pending toggle
-- 🔴 High priority
-- 🟡 Medium priority
-- 🟢 Low priority
-- 📚 Subject selection
-- 📝 Task description
-- 📅 Due dates
+| Module | What it does |
+|---|---|
+| 🏠 **Dashboard** | Greeting, live date, 6 stat cards, today's tasks, productivity ring, weekly activity chart, exam countdowns |
+| ✅ **Task Manager** | Add/edit/delete tasks with category, subject, priority, due date & time, duration, and status |
+| 📅 **Schedule** | Weekly, daily, and monthly calendar views with color-coded event categories |
+| 📖 **Study Planner** | Timeline-style planner grouped by day, with subject, topic, time block, and notes |
+| 📝 **Homework Tracker** | Filter by all / pending / completed / overdue, with automatic overdue detection |
+| 🎯 **Exam Prep** | Live countdown, auto-calculated preparation %, and a per-exam study checklist |
+| 💻 **Project Manager** | Multi-task projects with progress bars and completion tracking |
+| 📊 **Progress Dashboard** | Circular productivity ring, subject-by-subject bars, and a weekly activity chart |
+| 🔔 **Notifications** | Real-time alerts for due dates, overdue items, and completed tasks |
+| 🔎 **Global Search** | Search across tasks, homework, exams, projects, and study sessions instantly |
+| 👤 **Profile & Settings** | Editable profile, light/dark theme, reminder preferences, password change |
+| 🔐 **Authentication** | Register/login with per-user data isolation — no two accounts share data |
 
----
-
-🔎 Search & Organization
-
-StudyTrack provides real-time task organization through:
-
-- 🔍 Live task search
-- 📌 Status filters
-- 🎯 Priority filters
-- 🆕 Newest / oldest sorting
-- 📅 Due-date sorting
-- ⭐ Priority sorting
-- 🧹 Clear filters
+Every list, filter, sort, checkbox, and modal is wired to real state — nothing is a static mockup.
 
 ---
 
-🧠 How It Works
+## 🎨 Design
 
-                    ┌──────────────────┐
-                    │      LOGIN       │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │  AUTH VALIDATION │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                  ┌──────────────────────┐
-                  │      DASHBOARD       │
-                  └──────────┬───────────┘
-                             │
-             ┌───────────────┼───────────────┐
-             ▼               ▼               ▼
-       ┌──────────┐    ┌──────────┐    ┌──────────┐
-       │ Add Task │    │  Filter  │    │ Profile  │
-       └────┬─────┘    └────┬─────┘    └──────────┘
-            │               │
-            └───────┬───────┘
-                    ▼
-             ┌───────────────┐
-             │  localStorage │
-             └───────────────┘
+- **Display font:** [Sora](https://fonts.google.com/specimen/Sora) — distinctive, geometric headings
+- **Body font:** [Inter](https://fonts.google.com/specimen/Inter) — clean, highly readable
+- **Palette:** Indigo primary, warm amber accent, soft neutrals — light & dark mode included
+- **Motion:** Subtle, purposeful transitions — checkbox completion, modal fade/scale, toast slide-in, progress-bar fill, sidebar drawer
+
+Built following a real design system (tokenized colors, spacing, radii, and shadows in `style.css`) rather than default framework styling.
 
 ---
 
-🏗️ Project Structure
+## 🧱 Tech Stack
 
-StudyTrack/
-│
-├── 📄 index.html
-├── 📄 login.html
-├── 📄 register.html
-│
-├── 🎨 style.css
-│
-├── ⚙️ auth.js
-├── ⚙️ script.js
-│
-└── 📚 README.md
+```
+HTML5    →  Semantic structure across 3 pages
+CSS3     →  Custom design system, responsive grid/flexbox, animations
+JavaScript (Vanilla) → All app logic, state, and rendering
+localStorage → Client-side persistence, no backend required
+```
 
-📂 File Responsibilities
-
-File| Responsibility
-"index.html"| Protected dashboard
-"login.html"| User login
-"register.html"| New account registration
-"style.css"| Complete UI & responsive styling
-"auth.js"| Registration, login, logout & sessions
-"script.js"| Tasks, filters, statistics & dashboard
-"README.md"| Project documentation
+No React. No Bootstrap. No Tailwind. No build step. Just open it in a browser.
 
 ---
 
-⚙️ Technology Stack
+## 📂 Project Structure
 
-<p align="center">Technology| Role
-🧱 HTML5| Structure & semantic markup
-🎨 CSS3| UI, layout & responsive design
-⚡ Vanilla JavaScript| Application logic & DOM manipulation
-💾 localStorage| Browser-side persistence
-
-</p>«🚫 No React
-🚫 No Bootstrap
-🚫 No Tailwind
-🚫 No backend
-
-Just the fundamentals.»
+```
+studytrack/
+├── index.html      # Main dashboard (SPA — all feature sections)
+├── login.html       # Login page
+├── register.html     # Account creation page
+├── style.css        # Full design system & component styles
+├── auth.js         # Registration, login, session handling, data seeding
+├── script.js        # Dashboard logic, CRUD, rendering, interactions
+└── README.md
+```
 
 ---
 
-🔐 Authentication System
+## ⚡ Getting Started
 
-StudyTrack uses a frontend-only authentication flow based on browser "localStorage".
+### Option 1 — Just open it
+No installation needed. Clone the repo and open `register.html` (or `login.html`) directly in your browser.
 
-📝 Registration Flow
-
-User Registration
-       ↓
-Full Name + Username + Password
-       ↓
-studytrack_users
-       ↓
-Demo Tasks Created
-
-🔑 Login Flow
-
-Username + Password
-       ↓
-Credential Validation
-       ↓
-studytrack_session
-       ↓
-Protected Dashboard
-
----
-
-💾 Storage Architecture
-
-Storage Key| Data
-"studytrack_users"| All registered accounts
-"studytrack_session"| Current logged-in username
-"studytrack_remember"| Remember Me username
-"tasks_{username}"| Tasks belonging to each user
-
----
-
-👥 User-Specific Data
-
-Every account receives its own task collection.
-
-tasks_ali123
-tasks_ahmed456
-tasks_student01
-
-Example
-
-Ali Login
-    ↓
-Ali's Tasks
-
-Ahmed Login
-    ↓
-Ahmed's Tasks
-
-Users do not load another user's task list through the application's normal interface.
-
----
-
-📱 Responsive Experience
-
-StudyTrack is designed for:
-
-┌─────────────────────────────┐
-│          🖥️ Desktop         │
-├─────────────────────────────┤
-│          📱 Tablet          │
-├─────────────────────────────┤
-│          📲 Mobile          │
-└─────────────────────────────┘
-
-The interface includes:
-
-- 📱 Responsive sidebar
-- ☰ Mobile navigation drawer
-- 🔄 Flexible layouts
-- 📭 Empty states
-- 🔔 Toast notifications
-- ✅ Form validation
-- 📐 Responsive dashboard components
-
----
-
-🛠️ Run Locally
-
-1️⃣ Clone the repository
-
-git clone https://github.com/your-username/studytrack.git
+```bash
+git clone https://github.com/<your-username>/studytrack.git
 cd studytrack
+open register.html      # macOS
+start register.html     # Windows
+xdg-open register.html  # Linux
+```
 
-2️⃣ Open the application
+### Option 2 — Local server (recommended)
+Some browsers restrict certain features on `file://` URLs, so a lightweight local server is nicer:
 
-Start with:
+```bash
+# Python
+python3 -m http.server 5500
 
-login.html
+# Node
+npx serve .
+```
 
-You can open it directly in your browser or use VS Code Live Server.
+Then visit `http://localhost:5500/register.html`.
 
-3️⃣ Register
-
-Create a new account.
-
-4️⃣ Login
-
-Enter your credentials.
-
-5️⃣ Manage Tasks
-
-Create, edit, filter, sort, complete, and delete tasks.
-
----
-
-🌐 Deployment
-
-Because StudyTrack is a static frontend application, it can be deployed using platforms such as GitHub Pages or Vercel.
-
-GitHub
-
-git init
-git add .
-git commit -m "Initial commit - StudyTrack"
-git branch -M main
-git remote add origin https://github.com/your-username/studytrack.git
-git push -u origin main
-
-After pushing, connect the repository to your preferred static hosting platform.
+### Option 3 — GitHub Pages
+1. Push this repo to GitHub
+2. Go to **Settings → Pages**
+3. Set source to your default branch, root folder
+4. Your app will be live at `https://<your-username>.github.io/studytrack/register.html`
 
 ---
 
-⚠️ Security Notice
+## 🔐 How auth & data work
 
-«Important: StudyTrack is an academic frontend demonstration.»
-
-Passwords are stored in plain text inside browser "localStorage".
-
-There is currently:
-
-- ❌ No real backend authentication
-- ❌ No server-side authorization
-- ❌ No password hashing
-- ❌ No email recovery
-- ❌ No cloud synchronization
-
-For production software, the authentication layer should be replaced with:
-
-Secure Backend
-      ↓
-Password Hashing
-      ↓
-Session Management
-      ↓
-Authorization
-      ↓
-Database
+- Passwords are hashed client-side before storage (not cryptographically secure — this is a front-end demo, **not** meant for sensitive production data)
+- Every account gets its own isolated data under keys like `st_tasks_<username>`, `st_homework_<username>`, etc.
+- New accounts are seeded with example tasks, homework, exams, and a study plan so the dashboard isn't empty on first login
+- All data lives in the browser's `localStorage` — clearing browser storage will reset the app
 
 ---
 
-📊 Project Scope
+## 🗺️ Roadmap
 
-StudyTrack demonstrates practical understanding of:
+- [ ] Optional cloud sync (Firebase / Supabase backend)
+- [ ] Drag-and-drop task reordering
+- [ ] Recurring tasks & study sessions
+- [ ] Export progress reports (PDF/CSV)
+- [ ] Push notifications (Web Notifications API)
+- [ ] Multi-language support
 
-- Semantic HTML
-- CSS Grid
-- Responsive design
-- JavaScript DOM manipulation
-- CRUD-style operations
-- Form validation
-- Frontend authentication concepts
-- Browser storage
-- Search & filtering
-- UI state management
-- Responsive navigation
+Have an idea? Open an issue!
 
 ---
 
-🔮 Future Roadmap
+## 🤝 Contributing
 
-✅ Completed
+Contributions are welcome and appreciated.
 
-- [x] Frontend Dashboard
-- [x] Authentication Demo
-- [x] Task CRUD
-- [x] Search & Filters
-- [x] User-Specific Storage
-- [x] Responsive UI
-
-🚧 Planned
-
-- [ ] Secure Backend Authentication
-- [ ] Database Integration
-- [ ] Cloud Synchronization
-- [ ] Email Verification
-- [ ] Password Recovery
-- [ ] Push Notifications
-- [ ] Analytics Dashboard
-- [ ] Dark Mode
-- [ ] PDF / CSV Export
-- [ ] PWA Support
-- [ ] Collaborative Tasks
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ---
 
-🧪 Development Philosophy
+## 📄 License
 
-«Build the fundamentals first. Then scale the system.»
-
-StudyTrack intentionally uses vanilla web technologies so the underlying logic remains visible, understandable, and easy to modify.
-
-The project focuses on understanding the fundamentals rather than depending on large frameworks.
+Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ---
 
-📌 Project Status
+<div align="center">
 
-<p align="center">🚀 Active Academic Project
+Built with ☕ and vanilla JavaScript, for students who want less chaos and more progress.
 
-<br>🟢 Frontend Complete
-🟢 Authentication Demo Complete
-🟢 Task Management Complete
-🟢 Responsive UI Complete
+**⭐ Star this repo if StudyTrack helped you stay organized!**
 
-</p>---
-
-👨‍💻 Team
-
-Role| Responsibility
-👨‍💻 Member 1| HTML structure & pages
-🎨 Member 2| CSS, UI & responsiveness
-⚡ Member 3| JavaScript, authentication & task logic
-
-«Replace the member names with your actual team members before submission.»
-
----
-
-⭐ StudyTrack
-
-<p align="center">📚 Plan smarter. Track better. Stay ahead.
-
-Built with ❤️ using
-
-"HTML5" • "CSS3" • "Vanilla JavaScript"
-
-<br>⭐ If you like the project, consider giving it a star! ⭐
-
-</p>---
-
-<p align="center">
-  <sub>© 2026 StudyTrack • Academic Web Development Project</sub>
-</p>
+</div>
