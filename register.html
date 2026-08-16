@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create account · TaskNext</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+  <section class="auth-panel">
+    <div class="auth-panel__top">
+      <span class="wordmark">
+        <span class="wordmark__mark">
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.8L13 4.2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Task<span class="wordmark__next">Next</span>
+      </span>
+    </div>
+
+    <div class="auth-form-wrap">
+      <span class="auth-eyebrow">Get started</span>
+      <h1>Create your account</h1>
+      <p class="auth-sub">Takes less than a minute. No email required for this demo.</p>
+
+      <form id="register-form" novalidate>
+        <div class="field">
+          <label for="reg-fullname">Full name</label>
+          <input type="text" id="reg-fullname" name="fullName" placeholder="Jordan Lee" autocomplete="name">
+          <span class="field-error"></span>
+        </div>
+        <div class="field">
+          <label for="reg-username">Username</label>
+          <input type="text" id="reg-username" name="username" placeholder="e.g. jordan.lee" autocomplete="username">
+          <span class="field-error"></span>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" name="password" placeholder="At least 6 characters" autocomplete="new-password">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="reg-confirm">Confirm password</label>
+            <input type="password" id="reg-confirm" name="confirmPassword" placeholder="Repeat password" autocomplete="new-password">
+            <span class="field-error"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create account</button>
+      </form>
+
+      <p class="auth-switch">Already have an account? <a href="index.html">Sign in</a></p>
+    </div>
+  </section>
+
+  <aside class="auth-side">
+    <div class="auth-side__content">
+      <span class="wordmark">
+        <span class="wordmark__mark">
+          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.8L13 4.2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Task<span class="wordmark__next">Next</span>
+      </span>
+      <h2 class="auth-tagline">Every account keeps<br>its <span>own private list.</span></h2>
+
+      <div class="auth-side__mock">
+        <div class="auth-side__mock-row">
+          <span class="mock-check"></span>
+          <span>Set up onboarding checklist</span>
+          <span class="mock-badge high">HIGH</span>
+        </div>
+        <div class="auth-side__mock-row">
+          <span class="mock-check"></span>
+          <span>Sync design tokens with team</span>
+          <span class="mock-badge med">MEDIUM</span>
+        </div>
+        <div class="auth-side__mock-row">
+          <span class="mock-check done"></span>
+          <span class="mock-row-done">Write project brief</span>
+          <span class="mock-badge low">LOW</span>
+        </div>
+      </div>
+    </div>
+    <p class="auth-foot">TaskNext — a front-end demo. Data is stored only in this browser.</p>
+  </aside>
+
+  <script src="utils.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
